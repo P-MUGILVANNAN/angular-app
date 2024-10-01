@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+<section class="px-lg-5 px-2 m-0 p-0" id="AddEmployees">
+  <div class="border border-warning-subtle rounded-5 my-4 row p-0 m-0">
+    <div
+      class="col-10 col-lg-5 mx-auto text-center d-flex flex-column align-self-center"
+    >
+      <h2 class="text-center my-4">ADD EMPLOYEE</h2>
+      <img
+        src="assets/images/team.gif"
+        alt=""
+        class="image-fluid mx-auto"
+        width="90%"
+        height="auto"
+      />
+    </div>
+    <div class="col-12 col-lg-7 px-5 mx-auto">
+      <section class="py-5">
+        <form
+          class="col-12 d-flex flex-column mx-auto py-4 px-5 border border-secondary-subtle rounded-5 shadow"
+        >
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">Employee ID:</span>
+            <input
+              class="form-control w-25"
+              type="number"
+              name="Eid"
+              placeholder="Employee ID"
+              required
+            />
+          </label>
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">First Name:</span>
+            <input
+              class="form-control w-75"
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+          </label>
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">Last Name:</span>
+            <input
+              class="form-control w-75"
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </label>
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">Email:</span>
+            <input
+              class="form-control w-75"
+              type="email"
+              name="email"
+              placeholder="Employee E-mail"
+              required
+            />
+          </label>
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">Phone:</span>
+            <input
+              class="form-control w-75"
+              type="tel"
+              name="phone"
+              placeholder="Employee Phone"
+              required
+            />
+          </label>
+          <label class="form-label mb-3">
+            <span class="fw-bold text-secondary">City:</span>
+            <input
+              class="form-control w-75"
+              name="address"
+              placeholder="Employee City"
+              required
+            />
+          </label>
+          <div class="my-2 px-5">
+            <hr />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-outline-warning fw-bold w-50 mx-auto shadow"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+</section>

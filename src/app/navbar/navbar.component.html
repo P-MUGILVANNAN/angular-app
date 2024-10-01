@@ -1,0 +1,37 @@
+<!-- src/app/navbar/navbar.component.html -->
+<nav class="navbar navbar-expand-md bg-dark border-bottom border-warning border-1 border-body sticky-top">
+  <div class="container-fluid">
+    <h2 class='ms-2 me-3 text-center text-warning'>Company</h2>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav d-flex align-items-center">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link text-light">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/addemployees" class="nav-link text-light">Add Employees</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/viewemployees" class="nav-link text-light">View Employees</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-secondary" *ngIf="!isLoggedIn" (click)="login()">Login</button>
+          <button class="btn btn-secondary" *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <span class="navbar-text ms-3 mt-3 text-light">Welcome, {{ userDisplayName }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
